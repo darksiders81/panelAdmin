@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .topIconBadge {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: -5px;
+        right: 0;
+        background-color: tomato;
+        color: aliceblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+}
+
+@layer components {
+    .sidbarTitle {
+        @apply text-lg p-1 opacity-30;
+    }
+
+    .sidebarList {
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    .sidebarListItem {
+        padding: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .sidebarListItem:hover {
+        color: black;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .active {
+        color: steelblue;
+
+    }
+
+    .sidebaricon {
+        margin: 0 15px;
+        font-size: 20px;
+    }
+}
