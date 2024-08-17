@@ -14,7 +14,7 @@ import { FaSquarePollVertical, FaMessage } from "react-icons/fa6";
 
 export default function SidBar() {
   return (
-    <div className="sidbar flex rounded-lg bg-slate-200 sticky top-14">
+    <div className="sidbar flex rounded-lg bg-slate-200 fixed  top-14 right-0">
       <div className="sidBarWropper p-5 text-gray-900 divide-y-4 divide-lime-900">
         <div className="sidbarmenu mb-3">
           <h3 className="sidbarTitle ">داشبورد</h3>

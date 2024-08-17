@@ -7,7 +7,7 @@ import { MdOutlineLanguage } from "react-icons/md";
 export default function TopBar() {
   return (
     <>
-      <div className="w-full flex-row justify-between sticky top-0 z-50">
+      <div className="w-full flex-row justify-between sticky top-0 h-20 z-50">
         <div className="h-full px-5 flex justify-between items-center">
           <div className="left flex items-center ">
             <img
@@ -16,15 +16,15 @@ export default function TopBar() {
               alt="profiles images"
             />
             <div className="container-icons relative curser-pointer mr-2 text-gray-700 text-lg">
-              <IoMdNotifications className="text-2xl cursor-pointer" />
+              <IoMdNotifications className="text-2xl cursor-pointer hover:text-green-600" />
               <span className="topIconBadge"> 2</span>
             </div>
             <div className="container-icons container-icons relative curser-pointer mr-2 text-gray-700 text-lg">
-              <MdOutlineLanguage className="text-2xl cursor-pointer" />
+              <MdOutlineLanguage className="text-2xl cursor-pointer hover:text-green-600 " />
               <span className="topIconBadge"> 2</span>
             </div>
             <div className="container-icons container-icons relative curser-pointer mr-2 text-gray-700 text-lg">
-              <IoMdSettings className="text-2xl cursor-pointer" />
+              <IoMdSettings className="text-2xl cursor-pointer hover:text-green-600" />
             </div>
           </div>
           <div className="right">
