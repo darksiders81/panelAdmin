@@ -7,7 +7,7 @@ import { MdOutlineLanguage } from "react-icons/md";
 export default function TopBar() {
   return (
     <>
-      <div className="w-full flex-row justify-between sticky top-0 h-20 z-50">
+      <div className="w-full flex-row justify-between fixed bg-slate-200 top-0 h-20 z-50 ">
         <div className="h-full px-5 flex justify-between items-center">
           <div className="left flex items-center ">
             <img

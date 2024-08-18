@@ -6,13 +6,13 @@ import allRoutes from "./routes";
 function App() {
   let router = useRoutes(allRoutes);
   return (
-    <>
+    <div className="font-vazir">
       <TopBar />
       <div className="flex gap-3">
         <SidBar />
-        {router}
+        <div className="absolute left-0 mt-24">{router}</div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -6,7 +6,7 @@ import {
   FaShoppingBag,
 } from "react-icons/fa";
 import { IoCash } from "react-icons/io5";
-
+import { Link } from "react-router-dom";
 import { IoMdCash, IoIosMan } from "react-icons/io";
 import { TbReportSearch } from "react-icons/tb";
 import { MdEmail, MdReport } from "react-icons/md";
@@ -19,16 +19,18 @@ export default function SidBar() {
         <div className="sidbarmenu mb-3">
           <h3 className="sidbarTitle ">داشبورد</h3>
           <ul className="sidebarList ">
-            <a to="/">
+            <Link to="/">
               <li className="sidebarListItem ">
                 <FaHome className="sidebaricon" />
                 خانه
               </li>
-            </a>
-            <li className="sidebarListItem">
-              <FaChartLine className="sidebaricon" />
-              آنالیز
-            </li>
+            </Link>
+            <Link to="/analysis">
+              <li className="sidebarListItem">
+                <FaChartLine className="sidebaricon" />
+                آنالیز
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <IoMdCash className="sidebaricon" />
               فروش

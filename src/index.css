@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+@layer base {
+    @font-face {
+        font-family: "vazir";
+        src: url(./assets/fonts/Vazirmatn-Regular.ttf);
+    }
+}
+
 @layer utilities {
     .topIconBadge {
         width: 15px;
