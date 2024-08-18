@@ -9,7 +9,7 @@ export default function UserBox(props) {
         className="w-24 h-24 mr-4 rounded-full cursor-pointer border-2 border-gray-100 "
       />
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-xl">{props.username}</h1>
+        <h1 className="text-xl">{props.name}</h1>
         <h3 className="tex-lg">{props.price} تومان</h3>
       </div>
       {/* <button className="bg-green-600 py-2 px-6 rounded-full text-yellow-50 hover:bg-blue-600">

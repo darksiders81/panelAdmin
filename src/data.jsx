@@ -98,8 +98,15 @@ let analisisDatas = [
   {name : "آنالیز سالیانه" , sales : 100_000_000 , ProfitPercentage : 17} ,
   {name : "آنالیز فروش کل" , sales : 320_000_000 , ProfitPercentage : 80}
 ]
+let profitToby=[
+  {name : "آنالیز روزانه" , sales : 20_000_000 , Profit : 4_600_000} ,
+  {name : "آنالیز هفتگی" , sales : 50_000_000 , Profit : 10_000_000} ,
+  {name : "آنالیز ماهانه" , sales : 12_00_000 , Profit : 3_000_000} ,
+  {name : "آنالیز فصل" , sales : 25_000_000 , Profit : 10_000_000} ,
+  {name : "آنالیز سالیانه" , sales : 100_000_000 , Profit : 18_000_000} ,
+  {name : "آنالیز فروش کل" , sales : 320_000_000 , Profit : 50_000_000}
+]
 
 
 
-
-export { datas, monthDatas, users , weeksDatas ,analisisDatas};
+export { datas, monthDatas, users , weeksDatas ,analisisDatas , profitToby};

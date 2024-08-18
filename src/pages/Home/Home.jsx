@@ -7,15 +7,16 @@ import UserBox from "../../components/UsersBox/UserBox";
 import { IoIosArrowDown } from "react-icons/io";
 import WeekChart from "../../components/WeekChart/WeekChart";
 import AnalysisBox from "../../components/AnalysisBox/AnalysisBox";
+import ProfittoBuyChart from "../../components/ProfittoBuyChart/ProfittoBuyChart";
 
 export default function Home() {
   const [productsData, setproductData] = useState(datas);
   const [allUsers, setAllUsers] = useState(users);
   const [isSee, setIsSee] = useState(false);
-  const [boxDataAnalis, setBoxDataAnalis] = useState();
+ 
 
   return (
-    <div className="container ">
+    <div className="container">
       <div className="container grid gap-4  grid-cols-3">
         {analisisDatas.map((data) => (
           <>
@@ -24,26 +25,14 @@ export default function Home() {
         ))}
       </div>
       <h1
-        className="flex justify-between items-center px-2 text-2xl mt-8 text-blue-700 bg-gray-200 py-2 "
-        onClick={() => {
-          setTimeout(() => {
-            setIsSee(!isSee);
-          }, 1000);
-        }}
+        className="text-center items-center px-2 text-2xl mt-8 text-blue-700 bg-gray-200 py-2 "
+        
       >
-        <span>
-          <IoIosArrowDown
-            className={isSee && "rotate-180 transition-all duration-1000"}
-          />
-        </span>
+     
         نمودار فروش
-        <span>
-          <IoIosArrowDown
-            className={isSee && "rotate-180 transition-all duration-1000"}
-          />
-        </span>
+        
       </h1>
-      {isSee && <Chart dataChart={datas} />}
+     <Chart dataChart={datas} />
 
       <h1 className="text-center text-2xl mt-8 text-blue-700 bg-gray-200 py-2">
         آنالیز فروش ماهانه
@@ -77,6 +66,7 @@ export default function Home() {
         آنالیز خرید کاربران
       </h1>
       <Chart dataChart={users} />
+      
     </div>
   );
 }
