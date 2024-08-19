@@ -12,7 +12,7 @@ import ProfittoBuyChart from "../../components/ProfittoBuyChart/ProfittoBuyChart
 export default function Home() {
   const [productsData, setproductData] = useState(datas);
   const [allUsers, setAllUsers] = useState(users);
-  const [isSee, setIsSee] = useState(false);
+ 
  
 
   return (

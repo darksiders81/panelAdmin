@@ -53,12 +53,12 @@ export default function SidBar() {
               </li>
             </a>
 
-            <a to="/products">
+            <Link to="/products">
               <li className="sidebarListItem">
                 <FaShoppingBag className="sidebaricon" />
                 محصولات
               </li>
-            </a>
+            </Link>
             <li className="sidebarListItem">
               <IoCash className="sidebaricon" />
               تراکنشات
