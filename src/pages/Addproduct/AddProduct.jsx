@@ -78,13 +78,21 @@ export default function AddProduct() {
                 className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
                 placeholder="Resume"
               /> */}
-
-              <button
+              {isEdit ? (
+                <button
                 type="submit"
-                className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
+                className="bg-gradient-to-r from-indigo-500 text-lg to-purple-500 text-block font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-purple-600 transition ease-in-out duration-150"
               >
-                افزودن به محصولات
+                انجام ویرایش
               </button>
+              ) : (
+                <button
+                  type="submit"
+                  className="bg-gradient-to-r from-indigo-500 text-lg to-green-500 text-block font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-green-600 transition ease-in-out duration-150"
+                >
+                  افزودن به محصولات
+                </button>
+              )}
             </form>
           </div>
         </div>
