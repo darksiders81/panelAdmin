@@ -29,8 +29,8 @@ export default function AddProduct() {
 
   return (
     <>
-      <div className="text-center min-w-[1300px]">
-        <div className="flex flex-col items-center justify-center h-screen ]">
+      <div className="text-center min-w-[1100px]">
+        <div className="flex flex-col items-center justify-center h-screen ">
           <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
             {isEdit ? (
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -80,11 +80,11 @@ export default function AddProduct() {
               /> */}
               {isEdit ? (
                 <button
-                type="submit"
-                className="bg-gradient-to-r from-indigo-500 text-lg to-purple-500 text-block font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-purple-600 transition ease-in-out duration-150"
-              >
-                انجام ویرایش
-              </button>
+                  type="submit"
+                  className="bg-gradient-to-r from-indigo-500 text-lg to-purple-500 text-block font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-purple-600 transition ease-in-out duration-150"
+                >
+                  انجام ویرایش
+                </button>
               ) : (
                 <button
                   type="submit"

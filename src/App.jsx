@@ -21,7 +21,7 @@ function App() {
 
           <SidBar />
         </div>
-        <div className="absolute right-64 mt-24">
+        <div className="absolute right-60 mt-24">
           {isloaded ? router : <Spinner />}
         </div>
       </div>

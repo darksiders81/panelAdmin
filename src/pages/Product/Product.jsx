@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { datas } from "../../data";
 import { Link, useParams } from "react-router-dom";
 import { MdModeEdit } from "react-icons/md";
-import { FaTrash, FaPercentage } from "react-icons/fa";
+import EditBtn from "../../components/EditBtn/EditBtn";
+import { FaTrash } from "react-icons/fa";
 export default function Product() {
   const [allproducts, setAllproducts] = useState(datas);
   const paramsID = useParams();
@@ -65,9 +66,7 @@ export default function Product() {
         </p>
       </div>
       <div className="flex justify-between order-3 col-span-3 gap-5 p-8 ">
-        <button className="flex items-center justify-center w-full gap-2 px-5 py-4 my-2 transition-all bg-red-500 rounded-full hover:bg-slate-600 hover:text-white">
-          <FaTrash className="text-lg" /> حذف محصول
-        </button>
+        <EditBtn contentBtn="حذف محصول" />
         <Link
           to={`/addproduct/${productItem[0].id}`}
           className="flex items-center justify-center w-full gap-2 px-5 py-4 my-2 transition-all rounded-full hover:bg-slate-400 bg-sky-500"
