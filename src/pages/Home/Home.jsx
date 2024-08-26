@@ -12,11 +12,11 @@ import ProfittoBuyChart from "../../components/ProfittoBuyChart/ProfittoBuyChart
 export default function Home() {
   const [productsData, setproductData] = useState(datas);
   const [allUsers, setAllUsers] = useState(users);
- 
- 
+
+
 
   return (
-    <div className="container">
+    <div className="">
       <div className="container grid gap-4  grid-cols-3">
         {analisisDatas.map((data) => (
           <>
@@ -26,13 +26,13 @@ export default function Home() {
       </div>
       <h1
         className="text-center items-center px-2 text-2xl mt-8 text-blue-700 bg-gray-200 py-2 "
-        
+
       >
-     
+
         نمودار فروش
-        
+
       </h1>
-     <Chart dataChart={datas} />
+      <Chart dataChart={datas} />
 
       <h1 className="text-center text-2xl mt-8 text-blue-700 bg-gray-200 py-2">
         آنالیز فروش ماهانه
@@ -66,7 +66,7 @@ export default function Home() {
         آنالیز خرید کاربران
       </h1>
       <Chart dataChart={users} />
-      
+
     </div>
   );
 }

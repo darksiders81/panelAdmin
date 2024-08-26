@@ -16,9 +16,12 @@ function App() {
   return (
     <div className="font-vazir">
       <TopBar />
-      <div className="flex gap-3">
-        <SidBar />
-        <div className="absolute left-0 mt-24">
+      <div className="flex gap-3 ">
+        <div className="fixed">
+
+          <SidBar />
+        </div>
+        <div className="absolute right-64 mt-24">
           {isloaded ? router : <Spinner />}
         </div>
       </div>

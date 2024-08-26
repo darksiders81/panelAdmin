@@ -2,7 +2,7 @@ import { useState } from "react";
 import Chart from "../../components/Chart/Chart";
 import ChartMonth from "../../components/ChartMonth/ChartMonth";
 import DescrptionBox from "../../components/DescrptionBox/DescrptionBox";
-import { datas, analisisDatas , users } from "../../data";
+import { datas, analisisDatas, users } from "../../data";
 
 import WeekChart from "../../components/WeekChart/WeekChart";
 import AnalysisBox from "../../components/AnalysisBox/AnalysisBox";
@@ -11,7 +11,7 @@ import ProfittoBuyChart from "../../components/ProfittoBuyChart/ProfittoBuyChart
 export default function Analysis() {
   const [productsData, setproductData] = useState(datas);
   return (
-    <div className="container">
+    <div className="">
       <div className="container grid gap-4  grid-cols-3">
         {analisisDatas.map((data) => (
           <>

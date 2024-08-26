@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Products() {
   return (
-    <div className="container">
+    <div className="">
       <h1 className="text-center items-center px-2 text-2xl mt-8 text-blue-700 bg-gray-200 py-2 ">
         نمودار فروش
       </h1>
@@ -16,14 +16,15 @@ export default function Products() {
       <div className="grid grid-cols-2 gap-4 mb-8 mt-8">
         {datas.map((data) => (
           <>
-            <ProductInfoBox {...data}/>
+            <ProductInfoBox {...data} />
           </>
         ))}
-        
       </div>
       <div className="text-center mb-8">
-        <Link to="/addproduct" className="w-1/2 bg-orange-500 p-4 text-xl rounded-full hover:bg-violet-700 hover:text-white transition-all">
-        
+        <Link
+          to="/addproduct"
+          className="w-1/2 bg-orange-500 p-4 text-xl rounded-full hover:bg-violet-700 hover:text-white transition-all"
+        >
           اضافه کردن محصول جدید
         </Link>
       </div>
