@@ -27,6 +27,27 @@ export default function AddProduct() {
     }
   }, []);
 
+
+
+
+
+
+  // methods for event handler for all inputs 
+  const titleHandler = (e) => {
+    setTitleInput(e.value)
+  }
+  const priceHandler = (e) => {
+    setPriceInput(e.value)
+  }
+  const brandHandler = (e) => {
+    setBrandInput(e.value)
+  }
+  const imgHandler = (e) => {
+    setUrlImgInput(e.value)
+  }
+  const desHandler = (e) => {
+    setDescrptionInput(e.value)
+  }
   return (
     <>
       <div className="text-center min-w-[1100px]">
@@ -45,30 +66,35 @@ export default function AddProduct() {
             <form className="flex flex-col">
               <input
                 value={titleInput}
+                onChange={(e) => titleHandler(e)}
                 type="text"
                 className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
                 placeholder="نام کالا را وارد کنید"
               />
               <input
                 value={priceInput}
+                onChange={(e) => priceHandler(e)}
                 type="number"
                 className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
                 placeholder="قیمت کالا را وارد کنید"
               />
               <input
                 value={brandInput}
+                onChange={(e) => brandHandler(e)}
                 type="text"
                 className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
                 placeholder="برند محصول را وارد کنید"
               />
               <input
                 value={urlImagInput}
+                onChange={(e) => imgHandler(e)}
                 type="text"
                 className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
                 placeholder="لینک تصویر را وارد کنید"
               />
               <input
                 value={descrptionInput}
+                onChange={(e) => desHandler(e)}
                 type="text"
                 className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
                 placeholder="توضیحات در مورد محصول وارد کنید"
